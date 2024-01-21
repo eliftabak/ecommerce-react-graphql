@@ -1,0 +1,50 @@
+{
+    "name": "ni-products-catalog",
+    "version": "1.0.0",
+    "type": "module",
+    "license": "UNLICENSED",
+    "scripts": {
+        "start": "pnpm start:client & pnpm start:server",
+        "start:client": "vite",
+        "start:server": "tsx server/app.ts --tsconfig ./tsconfig.node.json",
+        "lint": "eslint .",
+        "type-check": "tsc"
+    },
+    "dependencies": {
+        "@apollo/client": "^3.8.8",
+        "@apollo/server": "^4.9.5",
+        "axios": "^1.6.5",
+        "graphql": "^16.8.1",
+        "lodash.debounce": "^4.0.8",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.21.0"
+    },
+    "devDependencies": {
+        "@tsconfig/node20": "^20.1.2",
+        "@tsconfig/vite-react": "^3.0.0",
+        "@types/lodash.debounce": "^4.0.9",
+        "@types/node": "^20.10.4",
+        "@types/react": "^18.2.45",
+        "@types/react-dom": "^18.2.17",
+        "@types/react-router-dom": "^5.3.3",
+        "@typescript-eslint/eslint-plugin": "^6.14.0",
+        "@typescript-eslint/parser": "^6.14.0",
+        "@vitejs/plugin-react": "^4.2.1",
+        "autoprefixer": "^10.4.17",
+        "eslint": "^8.55.0",
+        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "postcss": "^8.4.33",
+        "prettier": "^3.1.1",
+        "tailwindcss": "^3.4.1",
+        "tsx": "^4.6.2",
+        "typescript": "^5.3.3",
+        "vite": "^5.0.10"
+    },
+    "packageManager": "pnpm@8.12.1",
+    "engines": {
+        "node": ">=20.10",
+        "pnpm": "^8.12.1"
+    }
+}
